@@ -1767,29 +1767,29 @@
 	def_grass_wildmons ROUTE_46
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	wildmon 2, GEODUDE
-	wildmon 2, PIDGEY
-	wildmon 3, GEODUDE
-	wildmon 2, PHANPY
-	wildmon 2, RATTATA
-	wildmon 3, RATTATA
-	wildmon 3, RATTATA
+	wildmon 5, CHARMANDER
+	wildmon 5, SQUIRTLE
+	wildmon 5, BULBASAUR
+	wildmon 5, PIKACHU
+	wildmon 5, DITTO
+	wildmon 5, CLEFAIRY
+	wildmon 5, CHANSEY
 	; day
-	wildmon 2, GEODUDE
-	wildmon 2, PIDGEY
-	wildmon 3, GEODUDE
-	wildmon 2, JIGGLYPUFF
-	wildmon 2, RATTATA
-	wildmon 3, RATTATA
-	wildmon 3, RATTATA
+	wildmon 5, CHARMANDER
+	wildmon 5, SQUIRTLE
+	wildmon 5, BULBASAUR
+	wildmon 5, PIKACHU
+	wildmon 5, DITTO
+	wildmon 5, CLEFAIRY
+	wildmon 5, CHANSEY
 	; nite
-	wildmon 2, GEODUDE
-	wildmon 2, RATTATA
-	wildmon 3, GEODUDE
-	wildmon 2, RATTATA
-	wildmon 2, RATTATA
-	wildmon 3, RATTATA
-	wildmon 3, RATTATA
+	wildmon 5, CHARMANDER
+	wildmon 5, SQUIRTLE
+	wildmon 5, BULBASAUR
+	wildmon 5, PIKACHU
+	wildmon 5, DITTO
+	wildmon 5, CLEFAIRY
+	wildmon 5, CHANSEY
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_47

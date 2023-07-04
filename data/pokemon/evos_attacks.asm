@@ -14,12 +14,12 @@ BulbasaurEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 3, GROWL
-	db 7, LEECH_SEED
-	db 9, VINE_WHIP
+	db 7, VINE_WHIP
+	db 9, LEECH_SEED
 	db 13, POISONPOWDER
 	db 13, SLEEP_POWDER
-	db 15, MUD_SLAP ; Take Down → GSC TM move
-	db 19, RAZOR_LEAF
+	db 15, RAZOR_LEAF
+	db 19, MUD_SLAP ; Take Down → GSC TM move
 	db 21, TAKE_DOWN ; Sweet Scent → Take Down
 	db 25, GROWTH
 	db 27, DOUBLE_EDGE
@@ -27,6 +27,7 @@ BulbasaurEvosAttacks:
 	db 33, HEALINGLIGHT ; Synthesis → similar move
 	db 37, SEED_BOMB
 	db 43, SLUDGE_BOMB ; TM move
+	db 50, SOLAR_BEAM
 	db 0 ; no more level-up moves
 
 IvysaurEvosAttacks:
@@ -38,8 +39,8 @@ IvysaurEvosAttacks:
 	db 9, VINE_WHIP
 	db 13, POISONPOWDER
 	db 13, SLEEP_POWDER
-	db 15, MUD_SLAP ; Take Down → GSC TM move
-	db 20, RAZOR_LEAF
+	db 15, RAZOR_LEAF
+	db 19, MUD_SLAP ; Take Down → GSC TM move
 	db 23, TAKE_DOWN ; Sweet Scent → Take Down
 	db 28, GROWTH
 	db 31, DOUBLE_EDGE
@@ -47,6 +48,7 @@ IvysaurEvosAttacks:
 	db 39, HEALINGLIGHT ; Synthesis → similar move
 	db 44, SEED_BOMB
 	db 50, SLUDGE_BOMB ; TM move
+	db 55, SOLAR_BEAM
 	db 0 ; no more level-up moves
 
 VenusaurEvosAttacks:
@@ -97,8 +99,8 @@ CharmeleonEvosAttacks:
 	db 10, SMOKESCREEN
 	db 17, METAL_CLAW ; Dragon Rage → TM move
 	db 21, DRAGON_RAGE ; Scary Face → Dragon Rage
+	db 25, FLAME_CHARGE ; Flame Burst → TM move
 	db 28, SCARY_FACE ; Fire Fang → Scary Face
-	db 32, FLAME_CHARGE ; Flame Burst → TM move
 	db 39, SLASH
 	db 43, FLAMETHROWER
 	db 50, FIRE_SPIN
@@ -136,7 +138,7 @@ SquirtleEvosAttacks:
 	db 4, LEER ; Tail Whip → similar move
 	db 7, WATER_GUN
 	db 10, DEFENSE_CURL ; Withdraw → similar move
-	db 13, AQUA_JET ; Bubble → egg move
+	db 13, BUBBLE_BEAM ; Bubble → egg move
 	db 16, BITE
 	db 19, RAPID_SPIN
 	db 22, PROTECT
@@ -162,7 +164,7 @@ WartortleEvosAttacks:
 	db 24, PROTECT
 	db 28, WATER_PULSE
 	db 32, AQUA_TAIL
-	db 36, CLOSE_COMBAT ; Skull Bash → new move
+	db 36, IRON_HEAD ; Skull Bash → new move
 	db 40, MIRROR_COAT ; Iron Defense → egg move
 	db 44, RAIN_DANCE
 	db 48, HYDRO_PUMP
@@ -185,13 +187,13 @@ BlastoiseEvosAttacks:
 	db 24, PROTECT
 	db 28, WATER_PULSE
 	db 32, AQUA_TAIL
-	db 39, CLOSE_COMBAT ; Skull Bash → new move
+	db 39, IRON_HEAD ; Skull Bash → new move
 	db 46, MIRROR_COAT ; Iron Defense → egg move
 	db 53, RAIN_DANCE
 	db 60, HYDRO_PUMP
 	db 67, SHELL_SMASH ; Sw/Sw move
 if !DEF(FAITHFUL)
-	db 75, IRON_HEAD ; TM move
+	db 75, CLOSE_COMBAT ; TM move
 endc
 	db 0 ; no more level-up moves
 
@@ -200,7 +202,7 @@ CaterpieEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, STRING_SHOT
-	db 9, BUG_BITE
+	db 6, BUG_BITE
 	db 0 ; no more level-up moves
 
 MetapodEvosAttacks:
@@ -215,8 +217,8 @@ ButterfreeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE ; Caterpie move
 	db 1, STRING_SHOT ; Caterpie move
-	db 1, GUST
-	db 11, CONFUSION
+	db 10, GUST
+	db 10, CONFUSION
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
 	db 17, SLEEP_POWDER ; Psybeam → Sleep Powder
@@ -252,15 +254,15 @@ BeedrillEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING ; Weedle move
 	db 1, STRING_SHOT ; Weedle move
-	db 1, FURY_STRIKES ; Fury Attack → similar move
+	db 10, PIN_MISSILE ; Fury Attack → similar move
 	db 1, U_TURN ; evolution move
-	db 14, RAGE
+	db 10, RAGE
 	db 17, PURSUIT
 	db 20, FOCUS_ENERGY
 	db 23, VENOSHOCK
 	db 26, FEINT_ATTACK ; Assurance → similar move
 	db 29, TOXIC_SPIKES
-	db 32, PIN_MISSILE
+	db 32, MEGAHORN
 	db 35, POISON_JAB
 	db 38, AGILITY
 	db 41, SWORDS_DANCE ; Endeavor → TM move
@@ -656,8 +658,8 @@ NidokingEvosAttacks:
 	db 1, FOCUS_ENERGY
 	db 1, DOUBLE_KICK
 	db 1, POISON_STING
-	db 23, OUTRAGE ; Chip Away → HGSS tutor move
-	db 35, THRASH
+	db 23, THRASH ; Chip Away → HGSS tutor move
+	db 35, OUTRAGE
 	db 43, EARTH_POWER
 	db 58, MEGAHORN
 	db 0 ; no more level-up moves
@@ -3363,19 +3365,20 @@ MewEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SKETCH ; Reflect Type → new move
 	db 1, TELEPORT ; event move
-	db 1, TACKLE ; Pound → similar move
+	db 1, SWIFT ; Pound → similar move
 	db 1, TRANSFORM
 	db 1, CONFUSION ; Let's Go move
 	db 10, HEADBUTT ; Mega Punch → TM move
-	db 20, METRONOME
+	db 15, METRONOME
+	db 20, AMNESIA ; Amnesia → Baton Pass
+	db 25, ANCIENTPOWER
 	db 30, PSYCHIC_M
+	db 35, AURA_SPHERE
 	db 40, BARRIER
-	db 50, ANCIENTPOWER
-	db 60, BATON_PASS ; Amnesia → Baton Pass
-	db 70, SAFEGUARD ; Me First → Mewtwo move
-	db 80, AMNESIA ; Baton Pass → Amnesia
-	db 90, NASTY_PLOT
-	db 100, AURA_SPHERE
+	db 45, CALM_MIND ; Baton Pass → Amnesia
+	db 50, SAFEGUARD ; Me First → Mewtwo move
+	db 55, NASTY_PLOT
+	db 60, PSYSTRIKE
 	db 0 ; no more level-up moves
 
 ChikoritaEvosAttacks:

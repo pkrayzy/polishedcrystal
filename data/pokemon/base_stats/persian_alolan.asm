@@ -1,7 +1,16 @@
+if DEF(FAITHFUL)
 	db  65,  60,  60, 115,  75,  65 ; 440 BST
 	;   hp  atk  def  spd  sat  sdf
+else
+	db  65,  110,  90, 100,  85,  75 ; 525 BST
+	;   hp  atk  def  spd  sat  sdf
+endc
 
+if DEF(FAITHFUL)
 	db DARK, DARK ; type
+else
+	db DARK, STEEL ; type
+endc
 	db 90 ; catch rate
 	db 148 ; base exp
 	db NO_ITEM ; item 1

@@ -1,7 +1,11 @@
 	db  85,  73,  70,  67,  73, 115 ; 483 BST
 	;   hp  atk  def  spd  sat  sdf
 
+if DEF(FAITHFUL)
 	db PSYCHIC, PSYCHIC ; type
+else
+	db PSYCHIC, DARK ; type
+endc
 	db 75 ; catch rate
 	db 165 ; base exp
 	db NO_ITEM ; item 1

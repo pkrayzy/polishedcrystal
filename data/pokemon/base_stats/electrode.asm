@@ -1,7 +1,16 @@
+if DEF(FAITHFUL)
 	db  60,  50,  70, 150,  80,  80 ; 490 BST
 	;   hp  atk  def  spd  sat  sdf
+else
+	db  60,  80,  70, 150,  80,  80 ; 520 BST
+	;   hp  atk  def  spd  sat  sdf
+endc
 
+if DEF(FAITHFUL)
 	db ELECTRIC, ELECTRIC ; type
+else
+	db ELECTRIC, NORMAL ; type
+endc
 	db 60 ; catch rate
 	db 150 ; base exp
 	db NO_ITEM ; item 1

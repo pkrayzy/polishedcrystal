@@ -1,7 +1,11 @@
 	db  40,  30,  50, 100,  55,  55 ; 330 BST
 	;   hp  atk  def  spd  sat  sdf
 
+if DEF(FAITHFUL)
 	db ELECTRIC, ELECTRIC ; type
+else
+	db ELECTRIC, NORMAL ; type
+endc
 	db 190 ; catch rate
 	db 103 ; base exp
 	db NO_ITEM ; item 1

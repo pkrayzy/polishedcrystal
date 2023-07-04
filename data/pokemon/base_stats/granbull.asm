@@ -1,7 +1,11 @@
 	db  90, 120,  75,  45,  60,  60 ; 450 BST
 	;   hp  atk  def  spd  sat  sdf
 
+if DEF(FAITHFUL)
 	db FAIRY, FAIRY ; type
+else
+	db FAIRY, FIGHTING ; type
+endc
 	db 75 ; catch rate
 	db 178 ; base exp
 	db NO_ITEM ; item 1

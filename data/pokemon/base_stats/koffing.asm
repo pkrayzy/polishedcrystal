@@ -1,7 +1,11 @@
 	db  40,  65,  95,  35,  60,  45 ; 340 BST
 	;   hp  atk  def  spd  sat  sdf
 
+if DEF(FAITHFUL)
 	db POISON, POISON ; type
+else
+	db POISON, NORMAL ; type
+endc
 	db 190 ; catch rate
 	db 114 ; base exp
 	db NO_ITEM ; item 1

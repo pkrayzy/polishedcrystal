@@ -8,7 +8,7 @@
 	db SILVER_LEAF ; item 2
 	dn GENDER_F50, 3 ; gender ratio, step cycles to hatch
 	INCBIN "gfx/pokemon/gloom/front.dimensions"
-	abilities_for GLOOM, CHLOROPHYLL, CHLOROPHYLL, STENCH
+	abilities_for GLOOM, STENCH, CHLOROPHYLL, STENCH
 	db GROWTH_MEDIUM_SLOW ; growth rate
 	dn EGG_PLANT, EGG_PLANT ; egg groups
 

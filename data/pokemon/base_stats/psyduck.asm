@@ -1,7 +1,11 @@
 	db  50,  52,  48,  55,  65,  50 ; 320 BST
 	;   hp  atk  def  spd  sat  sdf
 
+if DEF(FAITHFUL)
 	db WATER, WATER ; type
+else
+	db WATER, PSYCHIC ; type
+endc
 	db 190 ; catch rate
 	db 80 ; base exp
 	db NO_ITEM ; item 1

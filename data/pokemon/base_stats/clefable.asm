@@ -1,10 +1,15 @@
+if DEF(FAITHFUL)
 	db  95,  70,  73,  60,  95,  90 ; 483 BST
 	;   hp  atk  def  spd  sat  sdf
+else
+	db  100,  75,  75, 75,  100,  100 ; 525 BST
+	;   hp  atk  def  spd  sat  sdf
+endc
 
 	db FAIRY, FAIRY ; type
 	db 25 ; catch rate
 	db 129 ; base exp
-	db LEPPA_BERRY ; item 1
+	db MOON_STONE ; item 1
 	db MOON_STONE ; item 2
 	dn GENDER_F75, 1 ; gender ratio, step cycles to hatch
 	INCBIN "gfx/pokemon/clefable/front.dimensions"

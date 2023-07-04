@@ -1,14 +1,24 @@
+if DEF(FAITHFUL)
 	db  65,  95,  57,  93, 100,  85 ; 495 BST
 	;   hp  atk  def  spd  sat  sdf
+else
+	db  65,  95,  57,  93, 100,  85 ; 495 BST
+	;   hp  atk  def  spd  sat  sdf
+endc
 
+if DEF(FAITHFUL)
 	db FIRE, FIRE ; type
+else
+	db FIRE, FIGHTING ; type
+endc
+
 	db 45 ; catch rate
 	db 167 ; base exp
 	db ASPEAR_BERRY ; item 1
 	db MAGMARIZER ; item 2
 	dn GENDER_F25, 4 ; gender ratio, step cycles to hatch
 	INCBIN "gfx/pokemon/magmar/front.dimensions"
-	abilities_for MAGMAR, FLAME_BODY, FLAME_BODY, VITAL_SPIRIT
+	abilities_for MAGMAR, IRON_FIST, FLAME_BODY, VITAL_SPIRIT
 	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
 

@@ -1,7 +1,11 @@
 	db  60,  65,  60, 110, 130,  75 ; 500 BST
 	;   hp  atk  def  spd  sat  sdf
 
+if DEF(FAITHFUL)
 	db GHOST, POISON ; type
+else
+	db GHOST, GHOST ; type
+endc
 	db 45 ; catch rate
 	db 190 ; base exp
 	db NO_ITEM ; item 1

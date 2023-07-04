@@ -2,7 +2,7 @@ if DEF(FAITHFUL)
 	db  48,  48,  48,  48,  48,  48 ; 288 BST
 	;   hp  atk  def  spd  sat  sdf
 else
-	db  78,  28,  48, 108,  28,  48 ; 338 BST
+	db  75,  75,  75, 75,  75,  75 ; 450 BST
 	;   hp  atk  def  spd  sat  sdf
 endc
 
@@ -13,7 +13,7 @@ endc
 	db METAL_POWDER ; item 2
 	dn GENDER_UNKNOWN, 3 ; gender ratio, step cycles to hatch
 	INCBIN "gfx/pokemon/ditto/front.dimensions"
-	abilities_for DITTO, LIMBER, LIMBER, IMPOSTER
+	abilities_for DITTO, IMPOSTER, IMPOSTER, IMPOSTER
 	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_DITTO, EGG_DITTO ; egg groups
 

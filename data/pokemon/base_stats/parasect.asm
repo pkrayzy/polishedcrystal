@@ -6,7 +6,11 @@ else
 	;   hp  atk  def  spd  sat  sdf
 endc
 
+if DEF(FAITHFUL)
 	db BUG, GRASS ; type
+else
+	db BUG, GHOST ; type
+endc
 	db 75 ; catch rate
 	db 128 ; base exp
 	db TINYMUSHROOM ; item 1

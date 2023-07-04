@@ -2,18 +2,22 @@ if DEF(FAITHFUL)
 	db  65,  83,  57, 105,  95,  85 ; 490 BST
 	;   hp  atk  def  spd  sat  sdf
 else
-	db  65,  88,  57, 105,  95,  85 ; 495 BST
+	db  65,  93,  57, 105,  95,  85 ; 500 BST
 	;   hp  atk  def  spd  sat  sdf
 endc
 
+if DEF(FAITHFUL)
 	db ELECTRIC, ELECTRIC ; type
+else
+	db ELECTRIC, FIGHTING ; type
+endc
 	db 45 ; catch rate
 	db 156 ; base exp
 	db PERSIM_BERRY ; item 1
 	db ELECTIRIZER ; item 2
 	dn GENDER_F25, 4 ; gender ratio, step cycles to hatch
 	INCBIN "gfx/pokemon/electabuzz/front.dimensions"
-	abilities_for ELECTABUZZ, STATIC, STATIC, VITAL_SPIRIT
+	abilities_for ELECTABUZZ, IRON_FIST, STATIC, VITAL_SPIRIT
 	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
 

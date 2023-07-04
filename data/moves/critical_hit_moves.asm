@@ -1,4 +1,5 @@
 CriticalHitMoves:
+if DEF(FAITHFUL)
 	db KARATE_CHOP
 	db NIGHT_SLASH
 	db RAZOR_LEAF
@@ -8,4 +9,20 @@ CriticalHitMoves:
 	db CROSS_CHOP
 	db SHADOW_CLAW
 	db STONE_EDGE
+else	
+	db KARATE_CHOP
+	db NIGHT_SLASH
+	db RAZOR_LEAF
+	db CRABHAMMER
+	db SLASH
+	db AEROBLAST
+	db CROSS_CHOP
+	db SHADOW_CLAW
+	db STONE_EDGE
+	db PAY_DAY
+	db X_SCISSOR
+	db CUT
+	db WING_ATTACK
+	db AURA_SPHERE
+endc	
 	db -1

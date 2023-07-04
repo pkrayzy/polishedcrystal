@@ -1284,7 +1284,6 @@ BattleAnim_RazorLeaf:
 	anim_ret
 
 BattleAnim_SolarBeam:
-	anim_jumpif $0, .FireSolarBeam
 	anim_1gfx ANIM_GFX_CHARGE
 	anim_sound 0, 0, SFX_CHARGE
 	anim_obj ANIM_OBJ_ABSORB_CENTER,   6, 0,  10, 4, $0
@@ -1298,10 +1297,6 @@ BattleAnim_SolarBeam:
 	anim_obj ANIM_OBJ_SOLAR_BEAM_CHARGE,   6, 0,  10, 4, $38
 	anim_wait 104
 	anim_bgeffect ANIM_BG_FLASH_WHITE, $0, $4, $2
-	anim_wait 64
-	anim_ret
-
-.FireSolarBeam
 	anim_1gfx ANIM_GFX_BEAM
 	anim_bgeffect ANIM_BG_CYCLE_OBPALS_GRAY_AND_YELLOW, $0, $2, $0
 	anim_call BattleAnimSub_Beam

@@ -1291,29 +1291,29 @@
 	def_grass_wildmons DARK_CAVE_VIOLET_ENTRANCE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	wildmon 3, GEODUDE
-	wildmon 2, ZUBAT
-	wildmon 2, GEODUDE
-	wildmon 4, GEODUDE
-	wildmon 2, TEDDIURSA
-	wildmon 4, ZUBAT
-	wildmon 4, DUNSPARCE
+	wildmon 5, GEODUDE
+	wildmon 5, ZUBAT
+	wildmon 5, GEODUDE
+	wildmon 6, GEODUDE
+	wildmon 5, TEDDIURSA
+	wildmon 6, ZUBAT
+	wildmon 6, DUNSPARCE
 	; day
-	wildmon 3, GEODUDE
-	wildmon 2, ZUBAT
-	wildmon 2, GEODUDE
-	wildmon 4, GEODUDE
-	wildmon 2, ZUBAT
-	wildmon 4, ZUBAT
-	wildmon 4, DUNSPARCE
+	wildmon 5, GEODUDE
+	wildmon 5, ZUBAT
+	wildmon 5, GEODUDE
+	wildmon 6, GEODUDE
+	wildmon 5, ZUBAT
+	wildmon 6, ZUBAT
+	wildmon 6, DUNSPARCE
 	; nite
-	wildmon 3, GEODUDE
-	wildmon 2, ZUBAT
-	wildmon 2, GEODUDE
-	wildmon 4, GEODUDE
-	wildmon 2, ZUBAT
-	wildmon 4, ZUBAT
-	wildmon 4, DUNSPARCE
+	wildmon 5, GEODUDE
+	wildmon 5, ZUBAT
+	wildmon 5, GEODUDE
+	wildmon 6, GEODUDE
+	wildmon 5, ZUBAT
+	wildmon 6, ZUBAT
+	wildmon 6, DUNSPARCE
 	end_grass_wildmons
 
 	def_grass_wildmons DARK_CAVE_BLACKTHORN_ENTRANCE
